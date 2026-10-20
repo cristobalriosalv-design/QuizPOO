@@ -8,4 +8,5 @@ public class GestorAyudas {
 		return elementos.size();
 	}
 	
+	int a ; 
 }
