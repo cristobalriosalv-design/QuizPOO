@@ -9,6 +9,26 @@ import java.util.Map;
 public class Master  {
     public static void main(String[] args) {
 
+    	RegistroAyudas<KitMedico> registroMedico = new RegistroAyudas<>();
+		 
+		 KitMedico m1 = new  KitMedico("MED-111", 78, "curitas de hotwheels");
+		 KitMedico m2 = new  KitMedico("MED-222", 100, "supositorios");
+		 KitMedico m3 = new  KitMedico("MED-333", 81, "tapabocas");
+		 
+		 registroMedico.agregar(m1);
+		 registroMedico.agregar(m2);
+		 registroMedico.agregar(m3);
+		 
+		 System.out.println("Cantidad en el registro: " + registroMedico.cantidad());
+		 
+		 for(KitMedico unidad : registroMedico.listar())
+		 {
+			 System.out.println(unidad.getCodigo() + " | Tipo: " 
+		 + unidad.getTipoMedicina()
+		 + " | Prioridad: " + unidad.obtenerDestinoPrioritario());
+			 
+		 }
+    	
         List<KitMedico> kitsMedicos = new ArrayList<>();
         kitsMedicos.add(new KitMedico("MED-101", 90, "dolex")); 
         kitsMedicos.add(new KitMedico("MED-102", 50, "condones")); 
