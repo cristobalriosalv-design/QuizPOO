@@ -12,4 +12,6 @@ public class ClaseTest
 	public void chuparPene(String nombre) {
 		nombre = "toro" ;
 	}
+	
+	int a ; 
 }
