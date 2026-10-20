@@ -5,17 +5,15 @@ import java.util.ArrayList;
 
 public class RegistroAyudas<T extends RecursoHumanitario> {
 
-	List<T> lista = new ArrayList<>();
+	private List<T> lista = new ArrayList<>();
 	
 	public void agregar(T elemento) {
 		lista.add(elemento);
 	}
 	
-	public void listar() {
-		
-		for (T lista : lista) {
-            System.out.println(lista);
-        }
+	public List<T> listar()
+	{
+		return lista;
 	}
 	
 	public int cantidad() {
