@@ -26,7 +26,7 @@ public class GestorAyudas {
 		
 	}
 	
-	 public void registrarKitMedico(List<? super KitMedico> destino, KitMedico elemento){
+	 public static void registrarKitMedico(List<? super KitMedico> destino, KitMedico elemento){
 		 destino.add(elemento);
 	 }
 	
