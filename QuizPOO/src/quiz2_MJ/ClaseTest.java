@@ -8,4 +8,8 @@ public class ClaseTest
 	{
 		this.mePicaElPico = mePicaElPico;
 	}
+	
+	public void chuparPene(String nombre) {
+		nombre = "toro" ;
+	}
 }
