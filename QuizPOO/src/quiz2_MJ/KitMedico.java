@@ -11,9 +11,15 @@ public class KitMedico extends RecursoHumanitario{
 			
 	}
 	
+	public String getTipoMedicina()
+	{
+		return tipoMedicina;
+	}
+	
 	@Override
-	public void obtenerDestinoPrioritario() {
-		System.out.println("Hospital");
+	public String obtenerDestinoPrioritario() 
+	{
+		return "Hospital";
 	}
 	
 }
