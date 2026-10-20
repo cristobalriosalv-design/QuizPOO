@@ -11,9 +11,16 @@ public KitAlimentos(String codigo , int porcentajeComplejitud , String tipoAlime
 		
 	}
 
+public String getTipoAlimento()
+{
+	return tipoAlimento;
+}
+
 	@Override
-	public void obtenerDestinoPrioritario() {
-		System.out.println("Restaurante");
+	public String obtenerDestinoPrioritario() {
+		
+		return "Restaurante";
 	}
+
 	
 }
