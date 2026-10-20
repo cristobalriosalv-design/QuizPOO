@@ -7,17 +7,16 @@ public class GestorAyudas {
 
 	public static void inspeccionarRecursos(List<? extends RecursoHumanitario> elementos) {
         
-		for (Object elemento : elementos) {
-            try {
-
-            	RecursoHumanitario recurso = (RecursoHumanitario) elemento;
-                recurso.validarParaEntregar();
+		for (RecursoHumanitario elemento : elementos) {
+            try 
+            {
+                elemento.validarParaEntregar();
                 
-            } catch (RecursoNoAptoException e) {
-                System.out.println("Error de validación: " + e.getMessage());
+            } catch (RecursoNoAptoException rnae) {
+                System.out.println("Error de validación: " + rnae.getMessage());
                 
             } finally {
-                System.out.println(" Revisión individual terminó.");
+                System.out.println(" Revisión individual de: " + elemento.getCodigo() +  "terminó.");
             }
         }
 	}
